@@ -9,6 +9,19 @@ The [jQuery 2.2 and 1.12 Released post][1] includes the following quote:
 
 If you don't want or can upgrade to those jquery versions then you might want to use the functions of this repository.
 
+# Usage Example
+
+    <!DOCTYPE html>
+    <html>
+      <body>
+        <svg width="100" height="100">
+          <circle id="my_circle" cx="50" cy="50" r="40" fill="yellow" />
+        </svg>
+      </body>
+    </html>
+
+`$('#my_circle').addClassSVG('new_class')`
+
 # Why `SVG` suffix in function names
 1. (At least for my application cases so far) I know that I am applying the function to an SVG element and not to a general jquery object.
 2. Improve readability and maintainability: In the coding, the function calls clearly state that a workaround is used.
