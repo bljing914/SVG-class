@@ -23,6 +23,7 @@ If you don't want or can upgrade to those jquery versions then you might want to
 `$('#my_circle').addClassSVG('new_class')`
 
 # Why `SVG` suffix in function names
+The reasons why I use new function names like `addClassSVG` instead of just overriding jquery's `addClass` are the following:
 1. (At least for my application cases so far) I know that I am applying the function to an SVG element and not to a general jquery object.
 2. Improve readability and maintainability: In the coding, the function calls clearly state that a workaround is used.
 3. I can search and replace the calls after an upgrade to a jquery version that supports SVG class operations correctly (see above).
